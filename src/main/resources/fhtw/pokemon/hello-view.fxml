@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fhtw.pokemon.HelloController">
+
+
+  <top>
+    <TextArea fx:id="txt_log" wrapText="true">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin></TextArea>
+  </top>
+  <center>
+    <ListView fx:id="pokemon_list">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin></ListView>
+  </center>
+
+  <left>
+    <VBox spacing="10">
+      <TextField fx:id="txt_name" promptText="name" />
+      <TextField fx:id="txt_level" promptText="level" />
+      <TextField fx:id="txt_hp" promptText="health-points" />
+      <TextField fx:id="txt_xp" promptText="experience-points" />
+      <Button fx:id="btn_add" onAction="#add" prefWidth="200" text="add" />
+      <Button fx:id="btn_remove" onAction="#remove" prefWidth="200" text="remove" />
+      <Button fx:id="btn_clear" onAction="#clear" prefWidth="200" text="clear" />
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+    </VBox>
+  </left>
+
+
+</BorderPane>
