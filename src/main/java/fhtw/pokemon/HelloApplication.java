@@ -1,8 +1,6 @@
 package fhtw.pokemon;
 
 import javafx.application.Application;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
@@ -21,8 +19,6 @@ import java.io.IOException;
 public class HelloApplication extends Application {
 
     public final boolean useFxml = true;
-
-    public ObservableList<Pokemon> pokemons = FXCollections.observableArrayList();
 
     @Override
     public void start(Stage stage) throws IOException {

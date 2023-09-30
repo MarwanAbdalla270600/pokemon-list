@@ -9,7 +9,7 @@ public class Pokemon {
     int level;
     int hp;
     int xp;
-    private static final ObservableList<Pokemon> list = FXCollections.observableArrayList();;
+    private static final ObservableList<Pokemon> list = FXCollections.observableArrayList();
 
     static {
         addPokemon(new Pokemon("Pikatchu", 7, 100, 300));

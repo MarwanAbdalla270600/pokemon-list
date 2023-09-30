@@ -1,7 +1,5 @@
 package fhtw.pokemon;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -33,7 +31,7 @@ public class HelloController {
         txt_log.appendText("This is the FXML view\n");
     }
     @FXML
-    public void add(ActionEvent event) {
+    public void add() {
         try {
             Pokemon.addPokemon(new Pokemon(txt_name.getText(), Integer.parseInt(txt_level.getText()), Integer.parseInt(txt_hp.getText()), Integer.parseInt(txt_xp.getText())));
             txt_log.appendText("ADD ");
@@ -43,7 +41,7 @@ public class HelloController {
     }
 
     @FXML
-    public void remove(ActionEvent event) {
+    public void remove() {
         try {
             Pokemon.removePokemon(pokemon_list.getSelectionModel().getSelectedIndex());
             txt_log.appendText("REMOVE ");
@@ -53,7 +51,7 @@ public class HelloController {
     }
 
     @FXML
-    public void clear(ActionEvent event) {
+    public void clear() {
         if (Pokemon.getPokemons().isEmpty()) {
             txt_log.appendText("List is empty\n");
         } else {
